@@ -1,0 +1,3666 @@
+*{
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    list-style: none;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+/*a:hover{
+    color: deepskyblue;
+}*/
+ul,li,input,a,textarea,button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    outline:none;
+    text-decoration: none;
+}
+header, section, footer, aside, nav, article, figure{
+    display: block;
+}
+p{
+    margin: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+input,textarea{
+    color: #fff;
+}
+ @mixin wenzibig{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 110px;
+    color: #F54133;
+    font-weight: bold;
+}
+@mixin wenzismall{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #585858;
+    margin-top: 10px;
+}
+//1200px:1200px;
+
+//1200px:375px;
+//@each 1200px in $list{
+//  @media screen and (min-width:#{1200px}){
+//      html{
+//          font-size: 100px * 1200px/1200px;
+//      }
+//  }
+//}
+//头部
+.header{
+    width: 100%;
+    height: auto;
+    background: #FFAD03;
+    overflow: hidden;
+    .header-width{
+        width: 1200px;
+        height: 50px;
+        margin: 0 auto;
+        .header-left{
+            float: left;
+            overflow: hidden;
+            line-height: 50px;
+            color: #fff;  
+            letter-spacing: 2px; 
+        }
+        .header-right{
+            float: right;
+            overflow: hidden;
+            .header-nav {
+                line-height: 50px;
+//              color: #FFFFFF;
+                padding: 0px 20px;
+                float: left;
+                transition: all 0.5s;
+                a{
+                    color: #FFFFFF;
+                    letter-spacing: 2px;
+                }
+            }
+            .header-nav:hover{
+                background: #fff;
+                border-bottom: 1px solid #FFAD03;
+                line-height: 49px;
+                a{
+                    color: #FFAD03;
+                }
+            }
+        }
+    }
+    
+    .header-ban{
+        width: 1200px;
+        height: 100px;
+        margin: 0 auto;
+        .ban-left{
+            float: left;
+            overflow: hidden;
+            img{
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.logo{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    .header-ban{
+        width: 1200px;
+        height: 100px;
+        margin: 0 auto;
+        .ban-left{
+            float: left;
+            overflow: hidden;
+            height: 100px;
+            width: auto;
+            img{
+                margin-top: 12px;
+                float: left;
+            }
+            .logo-wen{
+                height: 50px;
+                border-left: 1px solid black;
+                padding: 0 20px;
+                float: left;
+                margin-top: 25px;
+                line-height: 25px;
+                margin-left: 20px;
+                p{
+                   font-size: 18px; 
+                   color: #2C270D;
+                }
+            }
+        }
+        .ban-right{
+            float: right;
+            height: 100px;
+            .ask-a{
+                float: left;
+                margin-left: 20px;
+                margin-top: 7px;
+              
+            }
+            .ask-b{
+                float: left;
+//              margin-left: 20px;
+                .iconfont{
+                    font-size: 80px;
+                    color: #FFAB02;
+//                  line-height: 100px;
+                    margin-left: 20px;
+                }
+            }
+            .ask-c{
+                float: left;
+                margin-left: 20px;
+                height: 60px;
+                margin-top: 20px;
+                p{
+                    font-size: 16px;
+                    color: #2C270D;
+                }
+            }
+        }
+    }
+}
+//导航
+.nav{
+    width: 100%;
+    height: 50px;
+    background: #FFAD03;
+    .nav-width{
+        width: 1200px;
+        height: 50px;
+        margin: 0 auto;
+        overflow: hidden;
+        .nav-a{
+            width: 11.11%;
+            height: 50px;
+            float: left;
+            border-left: 1px solid #FED375;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+            transition: all 0.2s;
+            a{
+                color: #fff;
+                height: 50px;
+                display: block;
+                width: auto;
+            }
+            .red-red{
+                border-bottom: 4px solid red;
+            }
+        }
+        .nav-a:hover{
+            border-bottom: 4px solid red;
+        }
+        .nav-b{
+            border-left: 0;
+        }
+        
+    }
+}
+.banner{
+    width: 100%;
+    height: 770px;
+    overflow: hidden;
+    position: relative;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 770px;
+    }
+    .a3{
+        width: 100%;
+        height: 550px;
+    }
+    .banner-width{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        .s{
+            display: block;
+            margin: 0 auto;
+            margin-top: -10px;
+        }
+        .banner-tm{
+            width: 570px;
+            height: 100%;
+            background: black;
+            opacity: 0.6;
+            padding: 35px;
+            .top{
+                width: 100%;
+                height: 230px;
+                border-bottom: 5px solid #fff;
+            }
+            .bottom{
+                margin-top: 15px;
+                .bot{
+                    .bot-a{
+                        color: #FFAD03;
+                        font-size: 36px;
+                        font-weight: bold;
+                        font-family: 'Adobe 黑体 Std R';
+                        line-height: 45px;
+                    }
+                    .bot-b{
+                        color: #fff;
+                        font-size: 36px;
+                        font-weight: bold;
+                        font-family: 'Adobe 黑体 Std R';
+                        line-height: 45px;
+                    }
+                }
+                .tom{
+                    margin-top: 15px;
+                    color: #fff;
+                    font-size: 20px;
+                    font-family: 'Adobe 黑体 Std R';
+                }
+                .big{
+                    font-size: 60px;
+                    color: #FFAB02;
+                    font-family: 'Adobe 黑体 Std R';
+                    margin-top: 10px;
+                    font-weight: bold;
+                }
+                .yuyue{
+                    width: 220px;
+                    height: 60px;
+                    border: 1px solid #fff;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    text-align: center;
+                    transition: all 1s;
+                    a{
+                        line-height: 58px;
+                        font-size: 30px;
+                        color: #fff;
+                        letter-spacing: 2px;
+                    }
+                }
+                .yuyue:hover{
+                    background: #FFFFFF;
+                    border: 1px solid #fff;
+                    a{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+.banner-news{
+    height: 550px;
+}
+//搜索框
+.search{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background: #FFAB02;
+    .search-width{
+        width: 1200px;
+        height: 50px;
+        margin: 0 auto;
+        position: relative;
+        .search-left{
+            float: left;
+            height: 50px;
+            letter-spacing: 1px;
+            .search-a{
+                color: #FFFFFF;
+                line-height: 50px;
+            }
+            .search-b{
+                color: #FFFFFF;
+                line-height: 50px;
+                margin-right: 15px;
+            }
+        }
+        input{
+            width: 180px;
+            height: 30px;
+            border: 1px solid #ccc;
+            float: right;
+            border-radius: 30px;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+        .iconfont{
+            color: black;
+            font-size: 25px;
+            float: right;
+            margin-right: -170px;
+            margin-top: 10px;
+        }
+    }
+}
+//常见问题
+.pro{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    .pro-width{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        .a{
+            color: #F64033;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+        .b{
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            color: #575757;
+        }
+        .pro-a{
+            width: 100%;
+            height: 520px;
+            position: relative;
+            margin-top: 70px;
+            text-align: left;
+            margin-bottom: 80px;
+            .stl-a{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .stl-a-a{
+                width: 250px;
+                height: 60px;
+                word-wrap: break-word;
+                position: absolute;
+                top: 120px;
+                left: 236px;
+                color: #fff;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+            .stl-b{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .stl-b-a{
+                width: 250px;
+                height: 60px;
+                word-wrap: break-word;
+                position: absolute;
+                top: 125px;
+                right: 70px;
+                color: #fff;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+            .stl-c{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .stl-c-a{
+                width: 250px;
+                height: 60px;
+                word-wrap: break-word;
+                position: absolute;
+                bottom: 60px;
+                left: 236px;
+                color: #fff;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+            .stl-d{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            .stl-d-a{
+                width: 250px;
+                height: 60px;
+                word-wrap: break-word;
+                position: absolute;
+                bottom: 50px;
+                right: 70px;
+                color: #fff;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+        }
+        .pro-b{
+            width: 100%;
+            height: 303px;
+            overflow: hidden;
+            margin-top: 60px;
+            .left{
+                width: 52%;
+                height: 100%;
+                overflow: hidden;
+                float: left;
+                .left-a{
+                    width: 59%;
+                    height: 100%;
+                    float: left;
+                    overflow: hidden;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        transition: all 2s;
+                    }
+//                  ul{
+//                      width: 100%;
+//                      height: 100%;
+//                      opacity: 1;
+//                      transition: all 1s;
+//                      position: absolute;
+//                      top: 0;
+//                      left: 0;
+//                      background: #fff;
+//                  }
+                }
+                .left-a:hover img{
+                    transform: rotateY(360deg);
+                }
+                .left-b{
+                    float: right;
+                    width: 40%;
+                    height: 49.5%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        transition: all 2s;
+                    }
+                }
+                .left-b:hover img{
+                    transform: scale(1.3);
+                }
+                .left-c{
+                    float: right;
+                    width: 40%;
+                    height: 49.5%;
+                    margin-top: 1%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        transition: all 2s;
+                    }
+                }
+                .left-c:hover img{
+                    transform: scale(1.3);
+                }
+            }
+            .right{
+                width: 48%;
+                height: 100%;
+                padding-left: 5px;
+                word-wrap: break-word;
+                float: left;
+                p{
+                    color: #272727;
+                    text-align: left;
+                    line-height: 34px;
+                }
+            }
+        }
+        
+    }
+}
+.bm{
+    width: 100%;
+    height: 330px;
+    position: relative;
+//  overflow: hidden;
+    margin-top: 200px;
+    padding-top: 100px;
+    .bm-ss{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .bm-width{
+        width: 1200px;
+        height: 330px;
+        margin:0 auto;
+        position: relative;
+        text-align: center;
+        #img-a{
+            position: absolute;
+            right: 120px;
+            top: -250px;
+        }
+        #img-b{
+            position: absolute;
+            left: 50px;
+            top: -50px;
+        }
+        .bm-a{
+//          margin-top: 220px;
+            color: #FFFFFF;
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .bm-b{
+            margin-top: 20px;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .bm-c{
+            width: 300px;
+            height: 50px;
+//          background: red;
+            position: absolute;
+            bottom: 140px;
+            left: 450px;
+            .bm-c-a{
+                width: 140px;
+                height: 50px;
+                border: 1px solid #F54133;
+                text-align: center;
+                border-radius: 20px;
+                float: left;
+                background: #F54133;
+                a{
+                    line-height: 50px;
+                    display: block;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                }
+            }
+            .bm-c-b{
+                width: 140px;
+                height: 50px;
+                border: 1px solid #fff;
+                text-align: center;
+                border-radius: 20px;
+                float: left;
+                margin-left: 20px;
+                transition: all 1s;
+                a{
+                    line-height: 50px;
+                    display: block;
+                    color: #FFFFFF;
+                    font-size: 20px;
+                }
+            }
+            .bm-c-b:hover{
+                background: #F54133;
+                border: 1px solid #F54133;
+//              transform: scale(0.8);
+            }
+        }
+    }
+    
+}
+//福瑞豆豆品牌优势
+.youshi{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    .youshi-width{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        .youshi-a{
+            text-align: center;
+            color: #F54130;
+            font-size: 30px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            
+        }
+        .youshi-b{
+            color: #585858;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        .youshi-c{
+            color: #464646;
+            text-align: center;
+            margin-top: 8px;
+        }
+        .youshi-d{
+            width: 100%;
+            height: 530px;
+            overflow: hidden;
+            margin-top: 50px;
+            .left{
+                width: 50%;
+                height: 100%;
+                float: left;
+                overflow: hidden;
+                img{
+                    float: left;
+                    margin-left: -103px;
+                }
+            }
+            .right{
+                position: relative;
+                width: 50%;
+                height: 100%;
+                overflow: hidden;
+                float: left;
+                .right-a{
+                    position: relative;
+                    width: 100%;
+                    height: 77px;
+                    img{
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                    }
+                    .a{
+                        position: absolute;
+                        top: 25px;
+                        left: 30px;
+                        color: #FFFFFF;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    .b{
+                        position: absolute;
+                        bottom: 6px;
+                        left: 20px;
+                        font-size: 14px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+//弗瑞vs其他教育
+.teach{
+    width: 100%;
+    height: 1100px;
+    overflow: hidden;
+    position: relative;
+    background: #FFAB01;
+    background: url(img/13.png) no-repeat;
+    .banner{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+//      z-index: -1;
+    }
+    .teach-width{
+        width: 1200px;
+        height: 100%;
+        margin:  0 auto;
+        z-index: 1000;
+        .teach-a{
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            margin-top: 35px;
+            
+        }
+        .teact-b{
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        .teach-c{
+            width: 100%;
+            height: 340px;
+            margin-top: 100px;
+            overflow: hidden;
+            z-index: 100;
+            .nav{
+                width: 1101px;
+                height: 70px;
+                position: relative;
+                float: right;
+                z-index: 100;
+                .nav-a{
+                    width: 367px;
+                    height: 70px;
+                    float: left;
+                    text-align: center;
+                    line-height: 70px;
+                    background: #F54133;
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                }
+                .nav-b{
+                    width: 367px;
+                    height: 50px;
+                    margin-top: 20px;
+                    float: left;
+                    text-align: center;
+                    line-height: 50px;
+                    border-left: 1px solid #fff;
+                    background: #8A8A8A;
+                    color: #FFFFFF;
+                    font-size: 24px;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                }
+            }
+            .list{
+                width: 100%;
+                height: 270px;
+                background: #FFFFFF;
+                float: left;
+                z-index: 100;
+                .list-a{
+                    width: 99px;
+                    height: 100%;
+                    float: left;
+                    text-align: center;
+                    line-height: 33px;
+                    font-size: 14px;
+                }
+                .list-b{
+                    width: 367px;
+                    height: 100%;
+                    float: left;
+                    padding-left: 30px;
+                    line-height: 33px;
+                    font-size: 14px;
+                }
+                .list-c{
+                    color: #F54133;
+                }
+            }
+        }
+        .teach-d{
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-top: 50px;
+            .left{
+                width: 50%;
+                height: 100%;
+                position: relative;
+                float: left;
+                .left-a{
+                    position: absolute;
+                    top: 35px;
+                    left: 45px;
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                .area{
+                    width: 370px;
+                    height: auto;
+                    position: absolute;
+                    top: 60px;
+                    right: 5px;
+                    word-wrap: break-word;
+                    p{
+                        color: #fff;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+                .xiang{
+                    width: 135px;
+                    height: 50px;
+                    background: #F54133;
+                    text-align: center;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 220px;
+                    border-radius: 10px;
+                    transition: all 1s;
+                    a{
+                        line-height: 50px;
+                        display: block;
+                        color: #FFFFFF;
+                        font-size: 18px;
+                        letter-spacing: 2px;
+                    }
+                }
+                .xiang:hover{
+                    transform: scale(1.1);
+                }
+            }
+            .right{
+                width: 50%;
+                height: 100%;
+                position: relative;
+                float: left;
+                .right-a{
+                    position: absolute;
+                    top: 35px;
+                    left: 45px;
+                    color: #ABABAB;
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                .area{
+                    width: 370px;
+                    height: auto;
+                    position: absolute;
+                    top: 60px;
+                    right: 5px;
+                    word-wrap: break-word;
+                    p{
+                        color: #ABABAB;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+                .xiang{
+                    width: 135px;
+                    height: 50px;
+                    background: #F54133;
+                    text-align: center;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 220px;
+                    border-radius: 10px;
+                    transition: all 1s;
+                    a{
+                        line-height: 50px;
+                        display: block;
+                        color: #FFFFFF;
+                        font-size: 18px;
+                        letter-spacing: 2px;
+                    }
+                }
+                .xiang:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+//福瑞豆豆专业英文课程
+.youshi{
+    .youshi-width{
+        .kecheng{
+            width: 100%;
+            height: 330px;
+            margin-top: 140px;
+            .kecheng-a{
+                width: 25%;
+                height: 100%;
+                float: left;
+//              background: #F0F0EE;
+//              clear: both;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: -80px;
+                }
+                .ke-a{
+                    font-size: 20px;
+                    color: #242424;
+                    word-wrap: break-word;
+                    padding: 10px;
+                    display: block;
+                    border-bottom: 1px solid #A8A8A6;
+                    text-align: center;
+                    line-height: 30px;
+                }
+                .ke-b{
+                    padding: 10px;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                }
+            }
+            .kecheng-b{
+                margin-left: 11.67%;
+            }
+            .kecheng-d{
+                box-shadow: 0px 6px 6px 0px black;
+            }
+            .kecheng-a:hover{
+//              box-shadow: 0px 6px 6px 0px black;
+//              background: #ccc;
+            }
+        }
+    }
+}
+//黑板
+.black{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    .black-width{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .wenzi-a{
+            width: 50%;
+            height: auto;
+            position: absolute;
+            top: 350px;
+            left: 0;
+            padding-left: 50px;
+            p{
+                color: #fff;
+                font-size: 18px;
+//              font-weight: bold;
+                line-height: 34px;
+            }
+        }
+        .wenzi-b{
+            width: 50%;
+            height: auto;
+            position: absolute;
+            top: 350px;
+            right: 0;
+            padding-left: 50px;
+            p{
+                color: #fff;
+                font-size: 18px;
+//              font-weight: bold;
+                line-height: 34px;
+            }
+            
+        }
+    }
+}
+//福瑞豆豆专业英文教学
+.youshi{
+    .youshi-width{
+        .left{
+            width: 25.83%;
+            height: auto;
+            float: left;
+            margin-top: 20px;
+            overflow: hidden;
+            img{
+                float: left;
+                margin-left: -20px;
+            }
+        }
+        .right{
+            width: 74.17%;
+//          height: 200px;
+            float: right;
+//          background: red;
+            margin-top: 100px;
+            .top{
+                width: 100%;
+                height: 50px;
+                overflow: hidden;
+                .top-a{
+                    width: 20%;
+                    height: 50px;
+                    float: left;
+                    padding-right: 10px;
+                    overflow: hidden;
+                    transition: all 1s;
+                    .a{
+                        width: 50px;
+                        height: 50px;
+                        background: #8A8A8A;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 50px;
+                        float: left;
+                    }
+                    .b{
+                        width: 113px;
+                        height: 50px;
+                        border-top: 1px solid #8A8A8A;
+                        border-bottom: 1px solid #8A8A8A;
+                        float: left;
+                        text-align: center;
+                        line-height: 50px;
+                        color: #737373;
+                        margin-left: 2px;
+                    }
+                    .c{
+                        background: #F54133;
+                    }
+                    .active-red{
+                           .asd-one{
+                                background: #F54133;
+                                color: #fff;
+                           
+                             }
+                   }
+                   a:hover{
+                      
+                           .asd-one{
+                                background: #F54133;
+                                color: #fff;
+                           }
+                       
+                   }
+                }
+            }
+            #wene{
+                width: 100%;
+                height: 50px;
+                overflow: hidden;
+                .top-a{
+                    width: 33.33%;
+                    height: 50px;
+                    float: left;
+                    padding-right: 10px;
+                    overflow: hidden;
+                    .a{
+                        width: 50px;
+                        height: 50px;
+                        background: #8A8A8A;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 50px;
+                        float: left;
+                    }
+                    .b{
+                        width: 330px;
+                        height: 50px;
+                        border-top: 1px solid #8A8A8A;
+                        border-bottom: 1px solid #8A8A8A;
+                        float: left;
+                        text-align: center;
+                        line-height: 50px;
+                        color: #737373;
+                        margin-left: 2px;
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                    .c{
+                        background: #F54133;
+                    }
+                }
+            }
+            .bottom{
+                width: 100%;
+                word-wrap: break-word;
+                margin-top: 20px;
+                .active-wenzi{
+                    display: block;
+                }
+                p{
+                    color: #0D0D0D;
+                    line-height: 30px;
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+//福瑞豆豆专业国语教学
+.youshi{
+    .youshi-width{
+        .guoyu{
+            width: 100%;
+            height: auto;
+            position: relative;
+            img{
+                margin-top: 150px;
+            }
+            .img20{
+                margin-left: 30px;
+            }
+            .wen{
+                width: 45%;
+                height: auto;
+                position: absolute;
+                right: 9.17%;
+                top: 300px;
+                word-wrap: break-word;
+                display: none;
+                .wen-a{
+                    font-size: 20px;
+                    color: #FFFFFF;
+//                  font-weight: bold;
+                }
+                .wen-b{
+                    font-size: 15px;
+                    color: #fff;
+                    margin-top: 20px;
+                    line-height: 25px;
+                }
+            }
+            .wen-display{
+                display: block;
+            }
+            .daohang-a{
+                position: absolute;
+                top: 305px;
+                left: 32.67%;
+                color: black;
+            }
+            .daohang-b{
+                position: absolute;
+                top: 352px;
+                left: 32.67%;
+                color: black;
+            }
+            .daohang-c{
+                position: absolute;
+                top: 399px;
+                left: 32.67%;
+                color: black;
+            }
+            .daohang-d{
+                position: absolute;
+                top: 440px;
+                left: 32.67%;
+                color: black;
+            }
+            .daohang-bai{
+                color: #fff;
+            }
+        }
+    }
+}
+//立即咨询
+.bm{
+    .bm-width{
+        .zixun{
+//          margin-top: 30px;
+            .zixun-a{
+                margin-top: 5px;
+                width: 1000px;
+                text-align: left;
+                .zi-a{
+                    color: #F54133;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+                .zi-b{
+                    color: #fff;
+                    font-size: 25px;
+                }
+            }
+            
+        }
+        .xun{
+            width: auto;
+            height: auto;
+            overflow: hidden;
+            margin-top: 20px;
+            .xun-a{
+                font-size: 25px;
+                color: #F54133;
+                float: left;
+                font-weight: bold;
+                line-height: 44px;
+            }
+            .xun-b{
+                width: 155px;
+                height: 44px;
+                background: #F54133;
+                color: #FFFFFF;
+                font-size: 25px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 44px;
+                border-radius: 10px;
+                margin-left: 10px;
+                float: left;
+            }
+        }
+        .img21{
+            position: absolute;
+            right: 0;
+            bottom: 110px;
+        }
+    }
+}
+//福瑞豆豆大赛专题
+.dasai{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    .dasai-width{
+        width: 1200px;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        .dasai-a{
+            text-align: center;
+            font-size: 30px;
+            color: #F64234;
+            font-weight: bold;
+        }
+        .dasai-b{
+            text-align: center;
+            color: #484848;
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .video{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-top: 110px;
+            .img22{
+                float: left;
+                margin-top: 70px;
+                height: 100%;
+            }
+            video{
+                width: 600px;
+                height: 270px;
+                float: left;
+                margin-left: 75px;
+                background: red;
+            }
+            .img23{
+                float: right;
+                height: 100%;
+            }
+        }
+    }
+}
+//学生风采
+.youshi{
+    .youshi-width{
+        .fengcai{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-top: 80px;
+            .fengcai-a{
+                width: 22.75%;
+//              width: 289px;
+                height: 375px;
+                float: left;
+                margin-left: 3%;
+//              background: red;
+                overflow: hidden;
+                position: relative;
+                .feng{
+                    width: 100%;
+                    height: 65px;
+                    position: absolute;
+                    bottom: -70px;
+                    left: 0;
+                    background: rgba(0,0,0,0.7);
+                    transition: all 1s;
+                    .feng-a{
+                        text-align: center;
+                        color: #FFFFFF;
+                        font-size: 18px;
+                        margin-top: 8px;
+                    }
+                    .feng-b{
+                        text-align: center;
+                        color: #FFFFFF;
+                        font-size: 14px;
+//                      margin-top: 5px;
+                    }
+                }
+            }
+            .fengcai-a:hover .feng{
+                bottom: 0;
+            }
+            
+        }
+        .more{
+            width: 190px;
+            height: 50px;
+            background: #FFAB02;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+            border-radius: 10px;
+            a{
+                text-align: center;
+                line-height: 50px;
+                color: #fff;
+                letter-spacing: 2px;
+                display: block;
+                font-size: 18px;
+            }
+        }
+    }
+}
+//福瑞豆豆新闻动态
+.xinwen{
+    width: 100%;
+    height: 720px;
+    background: #FFAB02;
+//  background: url(img/28.png) no-repeat;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+    .img28{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .xinwen-wid{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+//      background: #FFAB02;
+//      opacity: 0.6;
+        .xinwen-width{
+            width: 1200px;
+            height: 100%;
+            overflow: hidden;
+            margin:  0 auto;
+            .xinwen-a{
+                color: #fff;
+                font-size: 30px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                text-align: center;
+                margin-top: 30px;
+            }
+            .xinwen-b{
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            .xinwen-c{
+                width: 100%;
+                height: 530px;
+                overflow: hidden;
+                margin-top: 70px;
+                .left{
+                    width: 47.5%;
+                    height: 100%;
+                    float: left;
+                    overflow: hidden;
+                    .top{
+                        width: 100%;
+                        height: 25px;
+                        border-bottom: 1px dashed #ccc;
+                        .top-a{
+                            color: black;
+                            float: left;
+                            line-height: 25px;
+                        }
+                        .top-b{
+                            float: right;
+                            color: #F54133;
+                            line-height: 25px;
+                            a{
+                                 color: #F54133;
+                            }
+                        }
+                    }
+                    .bottom{
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+                        .bottom-a{
+                            width: 100%;
+                            height: 106px;
+                            overflow: hidden;
+                            margin-top: 15px;
+                            .bot-a{
+                                width: 35%;
+                                height: 100%;
+                                float: left;
+                                overflow: hidden;
+                            }
+                            .bot-b{
+                                width: 65%;
+                                height: 100%;
+                                float: left;
+                                padding-left: 10px;
+                                .a{
+                                    color: black;
+                                    line-height: 30px;
+                                    font-size: 16px;
+                                }
+                                .b{
+                                    color: black;
+                                    line-height: 25px;
+                                    word-wrap: break-word;
+                                    font-size: 14px;
+                                }
+                            }
+                            #bot-b{
+                                
+                                p{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .right{
+                    width: 47.5%;
+                    height: 100%;
+                    float: right;
+                    overflow: hidden;
+                    .top{
+                        width: 100%;
+                        height: 25px;
+                        border-bottom: 1px dashed #ccc;
+                        .top-a{
+                            color: black;
+                            float: left;
+                            line-height: 25px;
+                        }
+                        .top-b{
+                            float: right;
+                            color: #F54133;
+                            line-height: 25px;
+                            a{
+                                 color: #F54133;
+                            }
+                        }
+                    }
+                    .right-a{
+                        width: 100%;
+                        height: 80px;
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            .zuoo{
+                                width: 13%;
+                                height: 60px;
+                                border-right: 1px solid #B47702;
+                                text-align: center;
+                                float: left;
+                                margin-top: 5px;
+                                .a{
+                                    font-size: 40px;
+                                    color: #8D5C00;
+                                    font-weight: bold;
+                                }
+                                .b{
+                                    color: #8D5C00;
+                                    margin-top: -10px;
+                                    letter-spacing: 0px;
+                                }
+                            }
+                            .youo{
+                                width: 87%;
+                                height: auto;
+                                float: left;
+                                color: #8D5C00;
+                                padding-left: 15px;
+                                padding-top: 10px;
+                                .a{
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                    .right-red{
+                        background: #F54133;
+                        a{
+                            .zuoo{
+                                .a,.b{
+                                    color: #fff;
+                                }
+                            }
+                            .youo{
+                                .a,.b{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//问题咨询
+.youshi{
+    .youshi-width{
+        .wenti-a{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-top: 30px;
+            .a,.b{
+                font-size: 25px;
+                color: #CACACA;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+        }
+        .list{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-top: 50px;
+            .list-left{
+                width: 50%;
+                height: auto;
+                float: left;
+                overflow: hidden;
+                .biao-a{
+                    font-size: 18px;
+                    color: black;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                }
+                .biao-b{
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    margin-top: 20px;
+                    .lis-a,.lis-b{
+                        color: #313131;
+                    }
+                    .lis-a{
+                        margin-left: 7px;
+                    }
+                    #input-a,#input-b{
+                        border: 1px solid #B2B2B2;
+                        padding: 0px 15px;
+                        width: 165px;
+                        height: 25px;
+                    }
+                }
+                .biao-c{
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    margin-top: 20px;
+                    .lis-a{
+                        color: #313131;
+                        height: 10px;
+                        float: left;
+                    }
+                    textarea{
+                        border: 1px solid #B2B2B2;
+                        width: 455px;
+                        height: 130px;
+                        resize: none;
+                        float: right;
+                        padding: 5px;
+                        margin-right: 37px;
+                    }
+                }
+                #but{
+                    width: 95px;
+                    height: 35px;
+                    background: #FEAB0D;
+                    text-align: center;
+                    line-height: 35px;
+                    color: #FFFFFF;
+                    letter-spacing: 2px;
+                    margin-top: 20px;
+                    margin-left: 105px;
+                    border-radius: 10px;
+                }
+            }
+            .list-right{
+                width: 50%;
+                height: auto;
+                float: right;
+                .ge-a{
+                    font-size: 18px;
+                    color: black;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                }
+                .ge-b{
+                    width: 100%;
+                    height: 60px;
+                    line-height: 60px;
+                    border-bottom: 1px dashed black;
+                }
+                .ge-c{
+                    width: 100%;
+                    height: 60px;
+                    line-height: 60px;
+//                  border-bottom: 1px dashed black;
+                }
+            }
+        }
+    }
+}
+//底部
+.footer{
+    width: 100%;
+    height: auto;
+    .footer-width{
+        width: 1200px;
+        height: auto;
+        margin:  0 auto;
+        overflow: hidden;
+        .bgm{
+            width: 100%;
+            height: 360px;
+            position: relative;
+            .img30{
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+            }
+            .img31{
+                position: absolute;
+                bottom: 0;
+                right: 410px;
+            }
+        }
+    }
+    .footer-bottom{
+        width: 100%;
+        height: 200px;
+        background: #FFAB02;
+        .fb-width{
+            width: 1200px;
+            height: 200px;
+            margin: 0 auto;
+            .fb-top{
+                width: 100%;
+                height: 145px;
+                overflow: hidden;
+                padding-top: 25px;
+                border-bottom: 2px dashed #FFD98C;
+                img{
+                   float: left;
+               }
+               .erwei{
+                   margin-left: 20px;
+               }
+               .lianjie{
+                   float: left;
+                   width: 260px;
+                   height: 90px;
+                   border: 1px solid #FFC44E;
+                   border-radius: 10px;
+                   margin-left: 210px;
+                   text-align: center;
+                   padding-top: 5px;
+                   span{
+                       text-align: center;
+                       a{
+                           color: #FFFFFF;
+                           line-height: 25px;
+                       }
+                       
+                   }
+               }
+               .guanjian{
+                   float: right;
+                   p{
+                       color: #FFFFFF;
+                   }
+               }
+            }
+            .fb-bottom{
+                width: 100%;
+                height: 55px;
+                overflow: hidden;
+                .nav-footer{
+                    width: 12.5%;
+                    height: 55px;
+                    text-align: center;
+                    line-height: 55px;
+                    color: #FFFFFF;
+                    float: left;
+                    transition: all 1s;
+                    a{
+                        color: #FFFFFF;
+                        font-size: 16px;
+                    }
+                }
+                .nav-footer:hover{
+                    background: #fff;
+                    a{
+                        color: #FFAB02;
+                    }
+                }
+            }
+        }
+    }
+}
+#jizhe{
+    z-index: 1000;
+    .jizhe-a{
+        font-size: 18px;
+        color: #FFFFFF;
+        margin: 150px 0px 0px 190px;
+    }
+    .jizhe-b{
+        font-size: 45px;
+        color: #F34232;
+        margin: 5px 0px 0px 190px;
+        font-weight: bold;
+    }
+    .jizhe-c{
+        font-size: 30px;
+        color: #fff;
+        margin: 5px 0px 0px 190px;
+    }
+    .jizhe-d{
+        color: #fff;
+        font-size: 20px;
+        margin: 5px 0px 0px 190px;
+    }
+}
+//新闻标题
+.qiang{
+    width: 100%;
+    height: auto;
+    .qiang-width{
+        width: 1200px;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        .qiang-a{
+            text-align: center;
+            font-size: 28px;
+            color: black;
+            margin-top: 90px;
+        }
+        .qiang-b{
+            color: #585858;
+            text-align: center;
+        }
+        .qiang-c{
+            width: 810px;
+            height: 270px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: 130px;
+            .lef{
+                width: 50%;
+                height: 100%;
+                float: left;
+                img{
+                    width: 100%;
+                }
+            }
+            .rig{
+                width: 50%;
+                height: 100%;
+                float: left;
+                padding: 10px 10px 5px 20px;
+                .rig-a{
+                    color: #2E2E2E;
+                    line-height: 25px;
+                    font-size: 14px;
+                }
+                .rig-b{
+                    width: 100%;
+                    height: 70px;
+                    background: #222127;
+                    margin-top: 20px;
+                }
+                .rig-c{
+                    width: 100%;
+                    height: 50px;
+                    overflow: hidden;
+                    margin-top: 30px;
+                    .a{
+                        width: 45%;
+                        height: 100%;
+                        background: #FFAB02;
+                        
+                        text-align: center;
+                        line-height: 50px;
+                        float: left;
+                        a{
+                           color: #FFFFFF; 
+                           display: block;
+                        }
+                    }
+                    .b{
+                        width: 45%;
+                        height: 100%;
+                        border: 1px solid #FFAB02;
+                        
+                        text-align: center;
+                        line-height: 50px;
+                        float: right;
+                        a{
+                           color: black; 
+                           display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .qiang-d{
+            width: 810px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        .apple-a{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-top: 90px;
+            font-size: 30px;
+//          font-weight: bold;
+        }
+        .apple-b{
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            color: #585858;
+        }
+        .apple-c{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-top: 60px;
+            p{
+                width: 50%;
+                float: left;
+                font-size: 14px;
+                line-height: 25px;
+            }
+            .a2{
+                width: 50%;
+                float: left;
+            }
+        }
+       
+        .english-a{
+            @include wenzibig;
+        }
+        .english-b{
+            @include wenzismall;
+        }
+    }
+    .qiang-button{
+        width: 200px;
+        height: 30px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 50px;
+        .shang{
+            width: 90px;
+            height: 30px;
+            background: #FCC419;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            float: left;
+            border-radius: 10px;
+        }
+        .xia{
+            width: 90px;
+            height: 30px;
+            background: #FCC419;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            float: right;
+            border-radius: 10px;
+        }
+    }
+}
+
+//活动中心
+.lj-nav{
+    width: 1200px;
+    margin:0  auto;
+    overflow: hidden;
+    background: #fff;
+    li{
+        float: left;
+    }
+    .breadcrumb{
+        margin-top: 20px;
+    }
+}
+.news{
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    .title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .new-left{
+        float: left;
+        width: 25%;
+        padding: 15px;
+        overflow: hidden;
+        .news-tab{
+            width: 100%;
+            height: auto;
+            border: 1px solid #FFAD03;
+            .tab-top{
+                width: 100%;
+                text-align: center;
+                color: #fff;
+                background: #FFAD03;
+                padding: 10px 0;
+                h3{
+                    margin: auto 0;
+                }
+            }
+            .tab{
+                width: 100%;
+                height: auto;
+                padding: 0 10px;
+                .tab-list{
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 16px;
+                    a{
+                        color: black;
+                    }
+                }
+                .tab-list:nth-of-type(1){
+                    margin-top: 10px;
+                }
+                .actives{
+                    background: #FFAD03;
+                   
+                    a{
+                         color: #fff;
+                    }
+                }
+            }
+            .tab-bottom{
+                width: 100%;
+                height: auto;
+                color: #fff;
+                overflow: hidden;
+                background: #FFAD03;
+                text-align: center;
+                margin-top: 10px;
+                .tb-left{
+                    float: left;
+//                  width: 30%;
+                    margin-left: 40px;
+                    span{
+                        font-size: 50px;
+                        color: #fff;
+                    }
+                    
+                }
+                .tb-right{
+                    float: left;
+//                  width: 70%;
+                    padding: 10px;
+                    padding-right: 0;
+                    color: #fff;
+                    text-align: center;
+                    p{
+                        margin: 0;
+                        color: #fff;
+                    }
+                    p:nth-of-type(1){
+                        font-size: 14px;
+                    } 
+                    p:nth-of-type(2){
+                        font-size: 12px;
+                    }
+                     p:nth-of-type(3){
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .new-right{
+        float: right;
+        width: 75%;
+        padding: 15px;
+        overflow: hidden;
+        .media{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            .media-left{
+                width: 20%;
+                height: 100px;
+                display: block;
+                float: left;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .media-body{
+                float: left;
+                width: 80%;
+                padding: 10px;
+                font-size: 12px;
+                h5{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 14px;
+                    margin: 0;
+                    width: 100%;
+                    overflow : hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+                .time{
+                    text-align: right;
+                    margin-top: 10px;
+                    color: #999;
+                }
+            }
+        }
+    }    
+}
+.fenye{
+    width: 1200px;
+    margin-top: 30px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    nav{
+        text-align: center;
+        .pagination>.active>a{
+                background: #FFAB02;
+                border: 1px solid #FFAD03;
+        }        
+    }
+}
+.detail{
+   width: 1200px;
+   height: auto;
+   margin: 0 auto; 
+   overflow: hidden;
+   margin-top: 50px;
+   padding-top: 30px;
+   background: #FFAB02;
+   padding-bottom: 30px;
+   .col-sm-6:nth-of-type(1){
+       padding-left: 150px;
+       padding-right: 0;
+   }
+   .col-sm-6:nth-of-type(2){
+       padding-right: 150px;
+       padding-left: 0;      
+   }
+   .thumbnail{
+       overflow: hidden;
+       border: none;
+       background: #FED375;
+         .caption{
+               width: 60%;
+               float:right;
+               .btn-primary{
+                   background: #FF0000;
+                   border: none;
+               }
+           }
+   }
+   .thumbnail:nth-of-type(1){
+       border-right: 1px solid #fff;
+   }
+   .liuyan{
+       width: 100%;
+       margin-top: 30px;
+       text-align: center;
+       color: #fff;
+   }
+    .inputbox{
+       width: 100%;
+       .top{
+           overflow: hidden;
+           width: 100%;
+           li{
+               float: left;
+               width: 25%;
+               padding: 5px 15px;
+               span{
+                   float: left;
+                   color: #fff;
+                   font-size: 14px;
+                   display: block;
+                   width: 35%;
+                   text-align: center;
+               }
+               input{
+                   float: left;
+                   width: 65%;
+                   background: none;
+                   border: 1px solid #fff;
+                   outline: none;
+               }
+           }
+       }
+       .bottom{
+           width: 100%;
+           height: auto;
+           overflow: hidden;
+           .zixun{
+               width: 50%;
+               float: left;
+               padding: 5px 15px;
+               span{
+                   display: block;
+                   text-align: center;
+                   float: left;
+                   width: 17%;
+                   font-size: 14px;
+                   color: #fff;
+               }
+               textarea{
+                   width: 83%;
+                   border: 1px solid #fff;
+                   background: none;
+                   resize: none;
+                   height: 100px;
+               }
+               .bottom-btm{
+                   width: 100%;
+                   margin-top: 20px;
+                   .right{
+                       float: right;
+                       width: 35%;
+                       border-radius: 5px;
+                       border: 1px solid #fff;
+                       text-align: center;
+                       line-height: 40px;
+                       height: 40px;
+                       background: none;
+                        color: #fff;
+                       font-size: 18px;
+                   }
+                   .left{
+                       float: left;
+                       width: 35%;
+                       border-radius: 5px;
+                       border: 1px solid #fff;
+                       margin-left: 17%;
+                       text-align: center;
+                       line-height: 40px;
+                       height: 40px;
+                       background: none;
+                       color: #fff;
+                       font-size: 18px;
+                   }
+                   .active{
+                       background: #FF0000;
+                       border: 1px solid #FF0000;
+                   }
+               }
+           }
+           .btm-right{
+               width: 50%;
+               float: left;
+               padding: 20px;
+               padding-left: 100px;
+               color: #fff;
+               p{
+                   color: #fff;
+               }
+           }
+       }
+   }
+}
+.quick{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #eeeeee;
+    margin-top: 50px;
+    position: relative;
+    height: 250px;
+    padding-top: 35px;
+    h3{
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 20%;
+        background: #fff;
+        text-align: center;
+        color: #FF0000;
+        top: -20px;
+        p{
+            margin-top: 10px;
+        }
+    }
+    .left-q{
+        width: 60%;
+        height: auto;
+        float: left;
+        padding-left: 10px;
+        margin-top: 15px;
+        p{
+            line-height: 35px;
+            span:nth-of-type(1){
+                color: #FF0000;
+            }
+        }
+    }
+    .right-q{
+        width: 40%;
+        float: right;
+        position: relative;
+        height: 100%;
+       img{
+           width: 55%;
+           position: absolute;
+           top: 0;
+           bottom: 0;
+           right: 0;
+           left: 0;
+           margin: auto;
+       }
+    }
+}
+
+.new-right{
+    .thumbnail{
+        border: 0;
+        padding-top: 0;
+        width: 100%;
+        img{
+            width: 90%;
+        }
+    }
+    .zhao{
+        width: 80%;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 20px;
+        line-height: 60px;
+        background: rgba(0,0,0,0.5);
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.new-right-tow{
+    height: 660px;
+    .thumbnail{
+        border: 0;
+        padding-top: 0;
+        width: 100%;
+        padding: 0;
+        img{
+            width: 100%;
+//          height: 100%;
+        }
+    }
+    .col-xs-8{
+        .zhao{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .zhao{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 20px;
+        margin: auto;
+        background: rgba(0,0,0,0.5);
+        text-align: center;
+        color: #fff;
+    }
+}
+#dituContent{
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+//品牌优势
+.pinpai{
+    width: 100%;
+    height: auto;
+    .pinpai-width{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        .pinpai-a{
+            @include wenzibig;
+        }
+        .pinpai-b{
+            @include wenzismall;
+        }
+        .pinpai-c{
+            width: 100%;
+            height: 460px;
+            overflow: hidden;
+            padding-top: 80px;
+            .pinpai-left{
+                width: 50%;
+                height: 100%;
+                overflow: hidden;
+                float: left;
+                img{
+                    float: right;
+                }
+            }
+            .pinpai-right{
+                width: 50%;
+                height: 100%;
+                float: left;
+                padding-left: 40px;
+                .aa{
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #F54132;
+                    margin-top: 30px;
+                }
+                .bb{
+                    color: black;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .pinpai-d{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            .aa{
+                @include wenzibig;
+            }
+            .bb{
+                @include wenzismall;
+            }
+        }
+    }
+}
+//四张图
+.four-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    .four-width{
+        width: 1200px;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        .four-left{
+            width: 22.75%;
+            height: 470px;
+            overflow: hidden;
+            float: left;
+            position: relative;
+            .ping{
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: #FFFFFF;
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                line-height: 470px;
+                background: rgba(0,0,0,0.4);
+            }
+            .shan{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: auto;
+                background: rgba(0,0,0,0.5);
+                padding: 10px;
+                display: none;
+                p{
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-top: 100px;
+                }
+                span{
+//                  padding: 10px;
+                    color: #FFFFFF;
+                    line-height: 40px;
+                    overflow: hidden;
+                    word-wrap: break-word;
+                }
+            }
+            .shan-display{
+                display: block;
+            }
+        }
+        .four-right{
+            margin-left: 3%;
+        }
+    }
+}
+//福瑞豆豆性格塑造
+.suzao{
+    width: 100%;
+    height: auto;
+    .suzao-width{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        .aa{
+            @include wenzibig;
+        }
+        .bb{
+            @include wenzismall;
+        }
+        .suzao-left{
+            width: 60%;
+            height: 650px;
+            float: left;
+//          margin-top: 60px;
+            position: relative;
+            img{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                
+            }
+        }
+        .suzao-right{
+            width: 40%;
+            height: 650px;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            margin-top: 60px;
+            img{
+                width: 100%;
+            }
+            .sr-a{
+//              margin-top: 10px;
+                position: absolute;
+                left: 75px;
+                top: 28px;
+                font-size: 12px;
+                color: #fff;
+            }
+            .sr-b{
+                position: absolute;
+                left: 75px;
+                top: 98px;
+                font-size: 12px;
+                color: #fff;
+            }
+            .sr-c{
+                position: absolute;
+                left: 75px;
+                top: 168px;
+                font-size: 12px;
+                color: #fff;
+            }
+            .sr-d{
+                position: absolute;
+                left: 75px;
+                top: 238px;
+                font-size: 12px;
+                color: #fff;
+            }
+            .sr-e{
+                position: absolute;
+                left: 75px;
+                top: 312px;
+                font-size: 12px;
+                color: #fff;
+            }
+            .sr-f{
+                position: absolute;
+                left: 75px;
+                top: 382px;
+                font-size: 12px;
+                color: #fff;
+            }
+            .sr-g{
+                position: absolute;
+                left: 75px;
+                top: 450px;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+    }
+}
+//3-6岁感知期
+.yuzhi{
+    width: 100%;
+    height: auto;
+//  .yuzhi-width{
+//      @include width;
+//      height: 600px;
+//      overflow: hidden;
+//  }
+}
+@mixin width{
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+//福瑞豆豆服务优势
+.fuwuy{
+    width: 100%;
+    height: auto;
+    .fuwuy-width{
+        @include width;
+        .aa{
+            @include wenzibig;
+        }
+        .bb{
+            @include wenzismall;
+        }
+        .fuwuy-a{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-top: 120px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+//福瑞豆豆教学场地
+.changdi{
+    width: 100%;
+    height: auto;
+    .changdi-width{
+        @include width;
+        .aa{
+            @include wenzibig;
+        }
+        .bb{
+            @include wenzismall;
+        }
+    }
+}
+//福瑞豆豆教师风采
+.jiaoshi{
+    width: 100%;
+    height: auto;
+    .jiaoshi-width{
+        @include width;
+        .aa{
+            @include wenzibig;
+        }
+        .bb{
+            @include wenzismall;
+        }
+    }
+}
+
+
+
+//精彩活动  大赛专题
+.jingcai{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    .jingcai-width{
+        width: 1200px;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        p:nth-child(1){
+            @include wenzibig;
+            margin-top: 0;
+        }
+        p:nth-child(2){
+            @include wenzismall;
+        }
+        .video{
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            margin-top: 110px;
+            .img22{
+                float: left;
+//              margin-top: 70px;
+                height: 100%;
+            }
+            div{
+                width: 600px;
+                height: 270px;
+                float: left;
+                margin-left: 75px;
+//              background: red;
+//              overflow: hidden;
+            }
+            .img23{
+                float: right;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+//           英文培训
+.tigao{
+    width: 100%;
+    height: auto;
+    .tigao-width{
+        @include width;
+        .left{
+            width: 60%;
+            height: auto;
+            float: left;
+            padding: 0px 20px 0px 0px;
+            .left-a{
+                @include wenzibig;
+                text-align: left;
+            }
+            .left-b{
+                @include wenzismall;
+                text-align: left;
+                margin-bottom: 30px;
+            }
+            p{
+                line-height: 30px;
+            }
+        }
+        .right{
+            width: 40%;
+            height: auto;
+            float: left;
+            img{
+                margin-top: 100px;
+            }
+        }
+    }
+}
+//福瑞豆豆特色英文教学
+.tese{
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    height: 580px;
+    background: #FFAB02;
+    .tese-width{
+        @include width;
+        overflow: hidden;
+         height: 580px;
+        li h3{
+            @include wenzibig;
+            text-align: right;
+            margin-top: 10px;
+            color: #fff;
+        }
+        li h2{
+            @include wenzismall;
+            text-align: right;
+            color: #fff;
+        }
+        .left{
+            width: 50%;
+            height: 100%;
+            float: left;
+            position: relative;
+            img{
+                position: absolute;
+                bottom: 0;
+                right: 5px;
+            }
+        }
+        .right{
+            width: 50%;
+            height: 500px;
+            overflow: hidden;
+            float: right;
+            div{
+                width: 100%;
+                height: auto;
+                position: relative;
+                margin-top: 10px;
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                span{
+                    position: absolute;
+                    top: 0px;
+                    left: 42px;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                p{
+                    padding-top: 30px;
+                    margin-left: 42px;
+                    color: #fff;
+                    line-height: 26px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+//课程体系
+.tixi{
+    width: 100%;
+    height: auto;
+    .tixi-width{
+        @include width;
+        li h3{
+            @include wenzibig;
+        }
+        li h2{
+            @include wenzismall;
+        }
+        .tixi-lu{
+            width: 560px;
+            height: 45px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: 30px;
+            div{
+                width: 165px;
+                height: 420x;
+                float: left;
+                border: 1px solid #000;
+                border-radius: 10px;
+                margin-left: 18px;
+                transition: all 0.5s;
+                a{
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    line-height: 42px;
+                }
+            }
+//          div:nth-child(1){
+//              margin-left: 0px;
+//              background: #F54133;
+//              border: 1px solid #F54133;
+//              a{
+//                  color: #fff;
+//              }
+//          }
+            div:hover{
+                 background: #F54133;
+                border: 1px solid #F54133;
+                a{
+                    color: #fff;
+                }
+            }
+            .tixi-div{
+                background: #F54133;
+                border: 1px solid #F54133;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        .container{
+            .content{
+                display: none;
+            }
+            .active-div{
+                display: block;
+            }
+        }
+    }
+}
+//                      语文培训
+.banner-new{
+    width: 100%;
+    height: auto;
+    img{
+        width: 100%;
+    }
+}
+//儿童国学
+.kid{
+    width: 100%;
+    height: auto;
+    .kid-width{
+        @include width;
+        padding-top: 122px;
+        position: relative;
+        overflow: inherit;
+        li:first-child{
+            width: 77.5%;
+            height: 55px;
+            a{
+                display: block;
+                float: left;
+                margin-left: 20px;
+                 ul{
+                    height: 55px;
+                    overflow: hidden;
+                    .asd-one{
+                        width: 50px;
+                        height: 50px;
+                        text-align: center;
+                        line-height: 50px;
+                        background: #8A8A8A;
+                        color: #fff;
+                        float: left;
+                        transition: all 0.5s;
+                        i{
+                            font-size: 20px;
+                        }
+                        
+                    }
+                    .asd-tow{
+                        margin-left: 5px;
+                        padding: 0px 5px;
+                        float: left;
+                        color: #8A8A8A;
+                        font-weight: bold;
+                        border-top: 1px solid #8A8A8A;
+                        border-bottom: 1px solid #8A8A8A;
+                        line-height: 50px;
+                        font-size: 18px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+           .active-red{
+               ul{
+                   .asd-one{
+                        background: #F54133;
+                        color: #fff;
+                   }
+               }
+           }
+           a:hover{
+               ul{
+                   .asd-one{
+                        background: #F54133;
+                        color: #fff;
+                   }
+               }
+           }
+        }
+        .kid-a{
+            position: absolute;
+            right: 0;
+            top: -170px;
+        }
+        .kid-b{
+            width: 70%;
+            margin-top: 20px;
+            p{
+                padding-left: 20px;
+                display: none;
+            }
+            .active-wenzi{
+                display: block;
+            }
+        }
+    }
+}
+//学习儿童国语的好处
+.learn{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .learn-width{
+        @include width;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        overflow: hidden;
+        li{
+            width: 650px;
+            height: auto;
+            overflow: hidden;
+            margin-top: 5%;
+            p:first-child{
+                color: #F34130;
+                font-size: 40px;
+                font-family: "华文行楷";
+                letter-spacing: 2px;
+            }
+            p:nth-child(2),p:nth-child(3){
+                color: #fff;
+            }
+            p:nth-child(2){
+                margin-top: 10px;
+            }
+            p:last-child{
+                color: #fff;
+                font-size: 28px;
+                font-family: "华文行楷";
+                letter-spacing: 2px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+//福瑞豆豆快乐国学
+@mixin posi{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.happy{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    .happy-width{
+        @include width;
+        height: 315px;
+        border: 1px solid #A9A9A9;
+        position: relative;
+        overflow: inherit;
+        li:first-child{
+            width: 370px;
+            height: 60px;
+            position: absolute;
+            top: -30px;
+            left: 415px;
+            background: #1D1E20;
+            p{
+                font-size: 35px;
+                text-align: center;
+                line-height: 60px;
+                font-family: "华文行楷";
+                color: #F7CD85;
+                letter-spacing: 2px;
+            }
+        }
+        li:nth-child(2){
+            width: 30%;
+            height: 100%;
+            float: left;
+            clear: both;
+            position: relative;
+            img{
+                display: block;
+                @include posi;
+            }
+        }
+        li:last-child{
+            width: 70%;
+            height: 100%;
+            float: left;
+            p{
+                width: 100%;
+                height: auto;
+                padding-right: 15%;
+                margin-top: 80px;
+            }
+        }
+    }
+}
+//福瑞豆豆新斯文国学
+.newsiwen{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    .newsiwen-width{
+        @include width;
+        height: 550px;
+        position: relative;
+        overflow: inherit;
+        border: 1px solid #A9A9A9;
+        padding-top: 40px;
+        .new-head{
+            width: 370px;
+            height: 60px;
+            position: absolute;
+            top: -30px;
+            left: 415px;
+            background: #1D1E20;
+            p{
+                font-size: 35px;
+                text-align: center;
+                line-height: 60px;
+                font-family: "华文行楷";
+                color: #F7CD85;
+                letter-spacing: 2px;
+            }
+        }
+        .newsiwen-a{
+            width: 33.33%;
+            height: 100%;
+            float: left;
+            div{
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                padding-left: 20px;
+                margin-top: 40px;
+                ul{
+                    height: 50px;
+                    .newsiwen-aa{
+                        width: 50px;
+                        height: 50px;
+                        background: #F54132;
+                        float: left;
+                        text-align: center;
+                        line-height: 50px;
+                        i{
+                            color: #fff;
+                            font-size: 20px;
+                        }
+                    }
+                    .newsiwen-bb{
+                        padding: 0px 5px;
+                        margin-left: 5px;
+                        border-bottom: 1px solid #999999;
+                        border-top: 1px solid #999999;
+                        float: left;
+                        line-height: 50px;
+                        text-align: center;
+                        font-weight: bold;
+                        color: #727272;
+                        font-size: 20px;
+                    }
+                }
+                p{
+                    margin-top: 10px;
+                }
+                .newsiwen-img{
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    margin-top: 10px;
+                    li:nth-child(1){
+                        width: 45%;
+                        height: auto;
+                        float: left;
+                        overflow: hidden;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                    li:nth-child(2){
+                        width: 45%;
+                        height: auto;
+                        float: left;
+                        margin-left: 10%;
+                        overflow: hidden;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .newsiwen-logo{
+                width: 100%;
+                height: 288px;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                img{
+                    display: block;
+                    @include posi;
+                }
+            }
+        }
+        .newsiwen-b{
+            width: 33.33%;
+            height: 100%;
+            float: left;
+            position: relative;
+            img{
+                @include posi;
+            }
+        }
+    }
+}
+//福瑞豆豆公益主播
+.gongyi{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    position: relative;
+    .b8{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .gongyi-width{
+        @include width;
+        height: 680px;
+        z-index: 10;
+        p:nth-child(1){
+            @include wenzibig;
+            color: #fff;
+            margin-top: 55px;
+        }
+        p:nth-child(2){
+            @include wenzismall;
+            color: #fff;
+        }
+        .gongyi-a{
+            width: 100%;
+            height: 400px;
+            margin: 0 auto;
+            background: #24242C;
+            margin-top: 70px;
+            overflow: hidden;
+//          padding: 70px;
+            li:first-child{
+                width: 37.5%;
+                height: 100%;
+                float: left;
+                margin-top: 70px;
+                margin-left: 70px;
+                p{
+                    color: #DFDFDF;
+                    text-align: left;
+                    line-height: 20px;
+                    font-size: 14px;
+                }
+                h2{
+                    text-align: left;
+                    color: #fff;
+                    margin-top: 0;
+                }
+                div{
+                    background: #222127;
+                    width: 400px;
+                    height: 70px;
+                    margin-top: 20px;
+                }
+            }
+            li:last-child{
+                width: 45%;
+                height: 100%;
+                float: right;
+                margin-top: 70px;
+                margin-right: 70px;
+            }
+        }
+    }
+}
+//福瑞豆豆新华小记者
+.xiaojizhe{
+    width: 100%;
+    height: auto;
+    .xiaojizhe-width{
+        @include width;
+        .big{
+            @include wenzibig;
+        }
+        .small{
+            @include wenzismall;
+        }
+        ul{
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 120px;
+            background: red;
+            li{
+                width: 800px;
+                height: 450px;
+            }
+        }
+    }
+}
+
+.jingpinsh{
+    div{
+        position: relative;
+        h2{
+            @include wenzibig;
+            color: #fff;
+            margin-top: 0px;
+        }
+        p{
+            @include wenzismall;
+            color: #fff;
+        }
+        img{
+            margin-top: 30px;
+        }
+        .left{
+            width: 200px;
+            height: auto;
+            overflow: hidden;
+            position: absolute;
+            top: 120px;
+            left: 10%;
+            li{
+                p{
+                    color: #fff;
+                    line-height: 20px;
+                }
+            }
+            li:nth-child(2){
+                margin-top: 40px;
+            }
+        }
+        .right{
+            width: 200px;
+            height: auto;
+            overflow: hidden;
+            position: absolute;
+            top: 120px;
+            right: 10%;
+            li{
+                p{
+                    color: #fff;
+                    line-height: 20px;
+                }
+            }
+            li:nth-child(2){
+                margin-top: 40px;
+            }
+        }
+    }
+}
+.fannao{
+    width: 100%;
+    height: auto;
+    .fannao-width{
+        @include width;
+        h2{
+            @include wenzibig;
+        }
+        p{
+            @include wenzismall;
+        }
+        ul{
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+            .left{
+                width: 40%;
+                height: 500px;
+                float: left;
+                img{
+                    
+                }
+            }
+            .right{
+                width: 60%;
+                height: 500px;
+                float: left;
+                text-align: left;
+                padding-left: 30px;
+                padding-top: 120px;
+                p{
+                    color: #585858;
+                    text-align: left;
+                }
+                h2{
+                    color: black;
+                    text-align: left;
+                    margin-top: 0;
+                    font-weight: 100;
+                }
+                h3{
+                    font-weight: bold;
+                    color: #FFBE58;
+                }
+                h1{
+                    color: #FFAB00;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    #nei-width{
+        width: 960px;
+    }
+    #jizhe{
+        width: 960px;
+    }
+    #dituContent{
+        width:960px;
+        height: 440px;
+        margin:  0 auto;
+    }
+    .banner-news{
+        height: 350px;
+        img{
+//          width: 100%;
+        }
+        #jizhe{
+            .jizhe-a{
+                margin-top: 20px;
+                margin-left: 300px;
+            }
+            .jizhe-b,.jizhe-c,.jizhe-d{
+                margin-left: 300px;
+            }
+        }
+    }
+    .header{
+        .header-width{
+            .header-right{
+                .header-nav{
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+    .youshi{
+        .youshi-width{
+            .fengcai{
+                .fengcai-a{
+                    height: 265px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .zhuanye{
+                .left{
+                    img{
+                        transform: scale(0.6);
+                    }
+                }
+                .right{
+                    .top{
+                        .top-a{
+                            .b{
+                                width: 78px;
+                            }
+                        }
+                    }
+                    #wene{
+                        .top-a{
+                            .b{
+                                width: 255px;
+                            }
+                        }
+                    }
+                    .bottom{
+                        margin-top: 10px;
+                        p{
+                            font-size: 14px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+            .guoyu{
+                .img19,.img20{
+                    transform: scale(0.8);
+                    width: 276px;
+                }
+                .img20{
+                    float: right;
+                    width: 640px;
+                }
+                .wen{
+                    transform: scale(0.8);
+                }
+                .daohang-a{
+                    transform: scale(0.7);
+                    top: 290px;
+                    left: 40%;
+                }
+                .daohang-b{
+                    transform: scale(0.7);
+                    top: 320px;
+                    left: 40%;
+                }
+                .daohang-c{
+                    transform: scale(0.7);
+                    top: 350px;
+                    left: 40%;
+                }
+                .daohang-d{
+                    transform: scale(0.7);
+                    top: 375px;
+                    left: 39.5%;
+                }
+            }
+            .list{
+                .list-left{
+                    .biao-b{
+                        #input-a{
+                            width: 104px;
+                        }
+                        #input-b{
+                            width: 105px;
+                        }
+                    }
+                    .biao-c{
+                        textarea{
+                            width: 334px;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .black{
+        .black-width{
+            .wenzi-a{
+                p{
+                    font-size: 14px;
+                }
+            }
+            .wenzi-b{
+                p{
+                    font-size: 14px;
+                }
+            }
+            img{
+                width: 960px;
+                margin-top: 80px;
+            }
+        }
+    }
+    .dasai{
+        .dasai-width{
+            .video{
+                video{
+                    width: 400px;
+                    height: 183px;
+                    margin-top: 40px;
+                }
+                img{
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+    .jingcai{
+        .jingcai-width{
+            .video{
+                div{
+                    width: 400px;
+                    height: 183px;
+                    margin-top: 40px;
+                    margin-left: 50px;
+                }
+//              img{
+//                  transform: scale(0.8);
+//              }
+            }
+        }
+    }
+    .pro{
+        .pro-width{
+            .pro-b{
+                .left{
+                    .left-a{
+                        height: 242px;
+                    }
+                    .left-b{
+                        height: 120px;
+                    }
+                    .left-c{
+                        height: 120px;
+                    }
+                }
+                .right{
+                    p{
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+        .banner-width{
+            .s{
+                transform: scale(0.8);
+                margin-top: -100px;
+            }
+        }
+    }
+//  .banner-new{
+//      width: 1200px;
+//      img{
+//          width: 1200px;
+//      }
+//  }
+}
+
+//福瑞豆豆成果展示
+.chengguo{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    .chengguo-width{
+        @include width;
+        .left{
+            width: 28%;
+            height: 420px;
+            float: left;
+            img{
+                width: 100%;
+            }
+        }
+        .right{
+            width: 72%;
+            height: 420px;
+            float: left;
+            h2{
+                @include wenzibig;
+                margin-bottom: 100px;
+                margin-top: 0;
+            }
+            p{
+                color: black;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.img{
+    width: 1200px;
+    height: auto;
+    margin-top: 30px;
+    margin: 0 auto;
+    img{
+        width: 100%;
+    }
+}
+.fankui{
+    width: 100%;
+    height: auto;
+    .fankui-width{
+        @include width;
+        h3{
+            @include wenzibig;
+        }
+        p{
+            text-align: center;
+            line-height: 30px;
+        }
+        h2{
+            text-align: center;
+        }
+        div{
+            width: 72px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            background: #F54133;
+            color: #fff;
+            margin-top: 20px;
+            margin: 0 auto;
+            border-radius: 5px;
+            transition: all 1s;
+            a{
+                color: #fff;
+            }
+        }
+        div:hover{
+            background: #6DDB79;
+        }
+        ul{
+            width: 970px;
+            height: 380px;
+            margin: 0 auto;
+            margin-top: 30px;
+            overflow: hidden;
+            li{
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
